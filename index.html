@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="herbert souza">
+    <meta name="robots" content="index follow">
+    <meta name="description" content="uma pagina focada em ser um reprodutor de musicas onde as musicas já estão alocadas no servidor tem toda a funcionalidade de um tocador de musica a unica diferença é que as musicas ja está definida espero que gostem. está na beta logo logo terá muito mas funcionalidades e se parecerá com um tocador de musicas assim como os outros">
+    <title>Playlist Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Playlist web</h1>
+        <button id="backgrond"><img id="button_background" src="img/moon-stars-fill.svg" alt="">Light</button>
+    </header>
+    <main>
+        <div class="container-playlist">
+            <div class="card-playlist">
+                <div class="box-imagem">
+                    <div class="box-online">
+                        <p>live</p>
+                    </div>
+                    <img id="tambe_song" src="" alt="">
+                </div>
+                <audio id="song" src=""></audio>
+                <div class="card-info">
+                    <div class="box-sobre">
+                        <div id="name_song">nome da musica</div>
+                        <div id="name_band">
+                            nome da banda
+                        </div>
+                    </div>
+                    <div class="box-like">
+                        <img id="liked" src="img/heart.svg" alt="">
+                    </div>
+                </div>
+                <div class="container-barra-progresso">
+                    <div id="box-barra">
+                        <div id="progresso"></div>
+                        <div class="box-time-song">
+                            <div id="duration">
+                                00:00:00
+                            </div>
+                            <div id="currenttime">
+                                00:00:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-button">
+                <button id="repeat"><img src="img/repeat.svg" alt=""></button>
+                <button id="song_return"><img src="img/fast-forward-circle.svg" alt=""></button>
+                <button id="play"><img src="img/play-circle.svg" alt=""></button>
+                <button id="advant"><img src="img/fast-forward-circle.svg" alt=""></button>
+                <button id="shuffle"><img src="img/shuffle.svg" alt=""></button>
+            </div>
+        </div>
+    </main>
+    <script src="functions_song.js"></script>
+</body>
+</html>

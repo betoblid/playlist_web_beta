@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-de-fundo: #2c5c4e;
+    --white: #f1eded;
+    --gray: gray;
+    --red-opacity-on: rgba(230, 27, 27, 0);
+    --red: rgb(233, 6, 6);
+    --green-white: linear-gradient(#2c5c4e, #12b184);
+}
+body{
+    min-height: 100vh;
+    background: var(--green-white);
+    color: var(--white);
+}
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 35px;
+    flex-direction: row;
+    padding-top: 20px;
+    font: 900 15px Arial;
+}
+header button{
+    border-radius: 10px;
+    padding: 5px;
+    font: 700 14px Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: rgba(255, 255, 255, 0.582);
+}
+.container-playlist{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   min-height: 80vh;
+}
+.card-playlist{
+    padding: 10px;
+}
+.box-online{
+    background: var(--red-opacity);
+    width: 100%;
+    height: 100%;
+    font: 700 16px Arial;
+    border-radius: 9px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    display: inline;
+}
+.box-online p{
+    background: var(--red);
+    width: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3px 0;
+}
+.box-online:hover{
+    opacity: 1;
+}
+.box-imagem img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.box-imagem{
+    position: relative;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.box-like{
+    margin-right: 10px;
+    cursor: pointer;
+}
+#name_song{
+    font: 900 22px Arial;
+}
+#name_band{
+    font: 900 17px Arial;
+}
+#box-barra{
+    height: 5px;
+    width: 100%;
+    background: var(--gray);
+    
+}
+#box-barra:hover{
+    height: 8px;
+}
+#progresso{
+    --progress: 0%;
+    background: var(--white);
+    height: 5px;
+    width: var(--progress);
+}
+#progresso:hover{
+    border-radius: 10px;
+    height: 10px;
+}
+.box-time-song{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.container-button{
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container-button button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.container-button button img{
+    width: 40px;
+}
+#shuffle img, #repeat img{
+    width: 25px;
+}
+#song_return{
+    transform: rotate(180deg);
+    margin-bottom: 5px;
+}
